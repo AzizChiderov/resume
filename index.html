@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House VOP</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="burger-menu"></div>
+                <div class="nav__left">
+                    <div class="logo"><img src="./Icons/navbar__logo.svg" alt="navbar__logo">
+                    </div>
+                </div>
+                <div class="nav__right">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#">О комплексе</a></li>
+                        <li class="nav-item"><a href="#">Район</a></li>
+                        <li class="nav-item"><a href="#">Каталог квартир</a></li>
+                        <li class="nav-item"><a href="#">Ипотека</a></li>
+                        <li class="nav-item"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero">
+                <h1 class="hero__title">Жилой комплекс <br> в историческом центре
+                </h1>
+                <div class="hero-mouse">
+                    <img src="./Icons/MouseIcon.svg" alt="MouseIcon">
+                </div>
+                <div class="hero__contacts">
+                    <div>
+                        <img src="./Icons/MapIcon.svg" alt="">
+                        <span>Наб. реки Фонтанки 10-15</span>
+                    </div>
+                    <div>
+                        <img src="./Icons/PhoneIcon.svg" alt="">
+                        <span>8(812)123-45-67</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-one">
+        <div class="container">
+            <div class="section-one__places">
+                <div class="section-one__places__item">
+                    <img src="./Icons/ParkIcon.svg" alt="">
+                    <p>Рядом исторические <br> парки и скверы</p>
+                </div>
+                <div class="section-one__places__item">
+                    <img src="./Icons/BuildingIcon.svg" alt="">
+                    <p>Полностью <br> обустроенный</p>
+                </div>
+                <div class="section-one__places__item">
+                    <img src="./Icons/FountainIcon.svg" alt="">
+                    <p>10 фонтанов <br> на территории</p>
+                </div>
+                <div class="section-one__places__item">
+                    <img src="./Icons/BicycleIcon.svg" alt="">
+                    <p>6км <br> велодорожек</p>
+                    <img src="./Images/II.png" alt="" class="img-absolute">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-two">
+        <div class="container"></div>
+        <h2>Наши квартиры</h2>
+        <div class="section-two__loft">
+            <img src="./Images/III.png" class="img-absolute-2" alt="">
+            <div class="section-two__gallery-1">
+                <div class="gallery-1__item">
+                    <img src="./Images/AppartmentImg1.png" alt="">
+                    <span>Лофт - 3 этажа</span>
+                </div>
+                <div class="gallery-1__item">
+                    <img src="./Images/AppartmentImg2.png" alt="">
+                    <span>Лофт - 2 этажа</span>
+                </div>
+            </div>
+            <div class="section-two__gallery-2">
+                <div class="gallery-2__item">
+                    <img src="./Images/AppartmentImg1.png" alt="">
+                    <span>Лофт - 3 этажа</span>
+                </div>
+                <div class="gallery-2__item">
+                    <img src="./Images/AppartmentImg2.png" alt="">
+                    <span>Лофт - 2 этажа</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h3>Хотите посмотреть</h3>
+            <div class="footer__center">
+                <div class="footer__left">
+                    <p>Lorem ipsum-"рыба",часто используемый в печати и
+                        вэб-дизайне.Lorem ipsum является стандартной "рыбой" для текстов
+                        на латинице с начала XXI века. В то время некий безымянный
+                        печатник создал большую коллекцию размеров и форм шрифтов.
+                        используя Lorem Ipsum для распечатки образцов.</p>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__right5">
+                        <input type="text" placeholder="Ваше имя" id="test">
+                        <input type="number" placeholder="Тел номер" id="test">
+                    </div>
+                    <div class="footer__right6">
+                        <span>Мы никому не передаем ваши <br>
+                            данные и не сохраняем в базу</span>
+                        <div class="footer__right7">
+                            <input type="text1" placeholder="Посмотреть район" id="test">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const burger_menu = document.getElementById('burger-menu');
+        const close_menu = document.getElementById('close-menu');
+        const nav_menu = document.querySelector('.nav__menu');
+        const hero = document.querySelector('.hero');
+
+        burger_menu.addEventListener('click', () =>{
+            nav_menu.classList.toggle("nav__menu--active");
+            hero.classList.toggle('hero--active')
+        } )
+    </script>
+</body>
+</html>
